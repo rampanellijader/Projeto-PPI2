@@ -1,0 +1,26 @@
+﻿CREATE SCHEMA app_camisas;
+
+CREATE TABLE camisas(
+   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    modelo VARCHAR(50) NOT NULL,
+	tamanho VARCHAR(50) NOT NULL,
+    preco FLOAT UNSIGNED NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO camisas (modelo, tamanho, preco) VALUES ("Camisa Grêmio 2017", "M", 99.90);
+INSERT INTO camisas (modelo, tamanho, preco) VALUES ("Camisa Internacional", "G", 99.90);
+
+
+CREATE TABLE usuarios(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    email VARCHAR(50) NOT NULL,
+	senha VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+INSERT INTO usuarios(email, senha) values ('jader.srr@hotmail.com', '12345');
+INSERT INTO usuarios(email, senha) values ('vitor.severo@hotmail.com', '654321');
+
+
