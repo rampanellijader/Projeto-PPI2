@@ -9,7 +9,7 @@ class TabelaUsuariosView{
   
         var str=`
         <h2>Tabela de Usuários</h2>   
-        <a id='novo' href='#'>Novo</a>     
+        <a id='novo' href='#usuarios'>Novo</a>     
         <table>
             <tr>
                 <th>E-mail</th>

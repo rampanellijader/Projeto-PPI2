@@ -9,7 +9,7 @@ class FormUsuariosView{
             usuario = new Usuario();
         }
         var str=`
-        <h2>Cadastro de Usuários</h2>
+        <h2>Cadastro de Camisas</h2>
         <form>
             <input type="hidden" id="idusuario" value="${usuario.id}" />
             <label for="email">E-mail:</label>    

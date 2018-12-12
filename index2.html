@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./css/icon.png">
+    <title> Loja de Camisas </title>
+    <style>
+              
+        *{
+            margin: 0;
+        }
+        body{
+            padding-top: 60px; 
+        }
+        
+        .menu{
+            width: 100%;
+            height: 50px;
+            padding: 0;
+            list-style: none;
+            background-color: black;    
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        .menu li a{
+            color: #fff;
+            padding: 1.1rem 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .menu li a:hover{
+            background-color: white;
+            color: black;
+        }
+        .item{
+            height: 1200px;
+            background-color: rgb(255, 255, 255);
+        }
+        .item2{
+            height: 1200px;
+            background-color: rgb(190, 86, 86);
+        }
+        .btn{
+            border: 0;
+            background-color: black;
+            color: #fff;
+            padding: 1rem;
+            font-size: 1rem;
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li><a href="http://localhost:8080/usuario.html">Usuários</a></li>
+        <li><a href="http://localhost:8080/camisa.html">Camisas</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+
+   
+    <button class="btn">Voltar ao topo da página</button>
+
+
+
+    <!--Scroll da Página-->
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+            var link = $(".menu li a");
+            var btnVoltarInicio = $(".btn");
+            $(window).scroll(function(){
+                var minhaPosicaoAtual = $(this).scrollTop();
+                if(minhaPosicaoAtual >= 1200){
+                    btnVoltarInicio.fadeIn();
+                }else{
+                    btnVoltarInicio.fadeOut();
+                }
+            });
+            
+            link.on("click",function(){
+                var seletor = $(this).attr("href");
+                var posicao = $(seletor).offset().top;
+                $("html, body").animate({scrollTop: posicao-60}, 1000);
+
+            });
+            
+            btnVoltarInicio.on("click", function(){
+                $("html, body").animate({scrollTop: 0}, 500);
+            });
+    </script>
+</body>
+</html>

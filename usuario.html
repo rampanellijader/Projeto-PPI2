@@ -8,10 +8,67 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./css/icon.png">
     <title>Loja de Camisas</title>
+    <style>
+            
+      *{
+          margin: 0;
+      }
+      body{
+          padding-top: 60px; 
+      }
+      
+      .menu{
+          width: 100%;
+          height: 50px;
+          padding: 0;
+          list-style: none;
+          background-color: black;    
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: fixed;
+          left: 0;
+          top: 0;
+      }
+      .menu li a{
+          color: #fff;
+          padding: 1.1rem 2rem;
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+      .menu li a:hover{
+          background-color: white;
+          color: black;
+      }
+      .item{
+          height: 1200px;
+          background-color: rgb(255, 255, 255);
+      }
+      .item2{
+          height: 1200px;
+          background-color: rgb(190, 86, 86);
+      }
+      .btn{
+          border: 0;
+          background-color: black;
+          color: #fff;
+          padding: 1rem;
+          font-size: 1rem;
+          position: fixed;
+          bottom: 1rem;
+          right: 1rem;
+      }
+  </style>
 </head>
 
+
+
 <body>
-    <h1>APP USUARIOS</h1>
+        <ul class="menu">
+                <li><a href="http://localhost:8080/usuario.html">Usuários</a></li>
+                <li><a href="http://localhost:8080/camisa.html">Camisas</a></li>
+                <li><a href="http://localhost:8080/contato.html">Contato</a></li>
+            </ul>
     <main></main>
 </body>
 

@@ -8,8 +8,8 @@ class TabelaCamisasView{
         const self = this;
   
         var str=`
-        <h2>Tabela de Usuários</h2>   
-        <a id='novo' href='#'>Novo</a>     
+        <h2>Tabela de Camisas</h2>   
+        <a id='novo' href='#camisas'>Novo</a>     
         <table>
             <tr>
                 <th>Modelo</th>
